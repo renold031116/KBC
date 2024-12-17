@@ -1,93 +1,105 @@
-/* styles.css */
-body {
+/* General resets and styling */
+* {
     margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
-    background-color: #B3967D;
-    padding: 20px;
+    padding: 0;
+    box-sizing: border-box;
   }
   
-  .header {
-    background-color: #84473c;
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f2f2; /* Light background for contrast */
+    color: #333;
+  }
+  
+  /* Header Styling */
+  header.card {
+    background-color: #800000; /* Maroon */
     color: white;
-    padding: 10px 0;
+    padding: 20px;
     text-align: center;
   }
   
-  .header__title {
-    margin: 0;
-    font-size: 2rem;
+  header.card h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
   }
   
-  .header__nav {
-    margin-top: 10px;
-  }
-  
-  .nav{
-    list-style: none; 
-    padding: 0; 
-    display: flex; 
-    justify-content: center; 
+  nav.nav {
+    display: flex;
+    justify-content: center;
     gap: 20px;
-   }
- .nav a {
-     color: white;
-     list-style: none;
-     color: #fff;
-     
-     text-align: center;
-     
- }
+  }
   
-  .main {
-    padding: 20px;
-    max-width: 800px;
+  nav.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+  }
+  
+  nav.nav a:hover {
+    background-color: #660000; /* Darker maroon on hover */
+    border-radius: 5px;
+  }
+  
+  /* Main Content Styling */
+  main {
+    padding: 40px 20px;
+    max-width: 1200px;
     margin: 0 auto;
   }
   
-  .home, .about, .recipes, .contact {
+  section.home {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
     margin-bottom: 40px;
-    background-color: #ecdbc7;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  .home__title, .about__title, .recipes__title, .contact__title {
-    margin-top: 0;
-    color: #e74c3c;
-  }
-  
-  .recipe {
-    display: flex;
-    gap: 10px;
+  section.home h2 {
+    font-size: 2.5rem;
+    color: #800000; /* Maroon */
     margin-bottom: 20px;
   }
   
-  .recipe__image {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 5px;
+  section.home p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
   }
   
-
-  
-  .recipe__title {
-    margin: 0;
-    font-size: 1.25rem;
+  section.card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  .recipe__description {
-    margin: 5px 0;
+  section.card h2 {
+    font-size: 2.5rem;
+    color: #800000; /* Maroon */
+    margin-bottom: 20px;
   }
   
-  .footer {
-    background-color: #84473c;
+  section.card p.about {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  /* Footer Styling */
+  footer.footer {
+    background-color: #800000; /* Maroon */
     color: white;
+    padding: 10px;
     text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+  }
+  
+  footer.footer .right {
+    font-size: 1rem;
   }
   
