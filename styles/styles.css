@@ -23,16 +23,11 @@ body {
   }
   
   .nav{
-    flex-direction:row;
-     background:  slategrey;
-     padding: 1rem;
-     grid-column: 1/6;
-     font-size: 1.5em;
-     text-align: center;
-     display: flex;
-     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-     border-radius: 5px;
-     border: 1px solid darkolivegreen;
+    list-style: none; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px;
    }
  .nav a {
      color: white;
