@@ -30,8 +30,6 @@ body {
     gap: 20px;
   }
   
-  .nav__item {}
-  
   .nav__link {
     color: white;
     text-decoration: none;
@@ -73,7 +71,7 @@ body {
     border-radius: 5px;
   }
   
-  .recipe__details {}
+
   
   .recipe__title {
     margin: 0;
