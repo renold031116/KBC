@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
     background-color: #f4f4f4;
+    padding: 20px;
   }
   
   .header {
@@ -29,8 +30,7 @@ body {
     gap: 20px;
   }
   
-  .nav__item {
-  }
+  .nav__item {}
   
   .nav__link {
     color: white;
@@ -47,7 +47,7 @@ body {
     margin: 0 auto;
   }
   
-  .home, .about, .menu, .contact {
+  .home, .about, .recipes, .contact {
     margin-bottom: 40px;
     background-color: white;
     padding: 20px;
@@ -55,18 +55,33 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  .home__title, .about__title, .menu__title, .contact__title {
+  .home__title, .about__title, .recipes__title, .contact__title {
     margin-top: 0;
     color: #e74c3c;
   }
   
-  .menu__list {
-    list-style: none;
-    padding: 0;
+  .recipe {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
   }
   
-  .menu__item {
-    margin-bottom: 10px;
+  .recipe__image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .recipe__details {}
+  
+  .recipe__title {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+  
+  .recipe__description {
+    margin: 5px 0;
   }
   
   .footer {
