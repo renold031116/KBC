@@ -12,23 +12,41 @@
     color: #333;
   }
   
-  /* Header Styling */
-  header.card {
-    background-color: #800000; /* Maroon */
-    color: white;
+  header {
+    background-color: maroon;
     padding: 20px;
-    text-align: center;
+    color: white;
+    overflow: auto; /* Ensures that floated elements don't affect the header height */
+flex-direction: row;
+    
   }
   
-  header.card h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+  header h1 {
+    font-size: 3em; /* Make the title large */
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Align with the floated image */
+    vertical-align: middle; /* Center align the text vertically with the image */
+   
   }
+  
+  header img {
+    width: 100px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid white; /* Add a white border around the image */
+    border-radius: 10px; /* Make the corners rounded */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+    float: left; /* Float the image to the left */
+    margin-right: 20px; /* Add some space between the image and the text */
+   
+  }
+  
   
   nav.nav {
     display: flex;
     justify-content: center;
     gap: 20px;
+    background-color: maroon;
   }
   
   nav.nav a {
@@ -102,4 +120,5 @@
   footer.footer .right {
     font-size: 1rem;
   }
+
   
